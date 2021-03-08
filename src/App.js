@@ -5,6 +5,7 @@ function App() {
   return (
     <div className="App">
       <header>
+        <div className="overlay"></div>
         <nav>
           <h2>Shop</h2>
           <ul>
