@@ -16,8 +16,12 @@
    text-decoration: none;
  }
 
- li {
+ nav li {
    color: white;
+   list-style: none;
+   display: inline-block;
+   padding-right: 10px;
+   padding-left: 10px;
  }
 
  header {
