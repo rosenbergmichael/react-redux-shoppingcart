@@ -11,13 +11,14 @@
    color: white;
  }
 
- li a {
-   color: white;
+ nav li a {
+   background-color: white;
    text-decoration: none;
+   font-weight: bold;
+   padding: 5px;
  }
 
  nav li {
-   color: white;
    list-style: none;
    display: inline-block;
    padding-right: 10px;
