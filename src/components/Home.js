@@ -1,8 +1,9 @@
  import React from 'react'; 
  import giantsHat from '../images/giantshat.jpeg'
- import giantsShorts from '../images/giantsshorts.jpeg'
+ import giantsJacket from '../images/giantsjacket.jpg'
  import metsJersey from '../images/metsjersey.jpeg'
  import bullsHat from '../images/bullshat.jpeg'
+
  
  const Home = () => {
   return(
@@ -14,7 +15,7 @@
         <a className="addToCart cart1" href="#">Add to Cart</a>
       </div>
       <div className="image">
-        <img src={giantsShorts} alt="NY Giants Shorts" /> 
+        <img src={giantsJacket} alt="NY Giants Shorts" /> 
         <h3>NY Giants Shorts</h3>
         <h3>$40.00 </h3>
         <a className="addToCart cart2" href="#">Add to Cart</a>
