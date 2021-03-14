@@ -1,4 +1,4 @@
- import React from 'react'; 
+ import React, { useState } from 'react'; 
  import giantsHat from '../images/giantshat.jpeg'
  import giantsJacket from '../images/giantsjacket.jpg'
  import metsJersey from '../images/metsjersey.jpeg'
@@ -6,6 +6,11 @@
 
  
  const Home = () => {
+
+  const [basketNumbers, setBasketNumbers] = useState(0);
+
+  
+
   return(
     <div className="container">
       <div className="image">
