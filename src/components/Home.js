@@ -10,7 +10,7 @@
   const [basketNumbers, setBasketNumbers] = useState(0);
 
   const addToBasket = () => {
-    console.log("button clicked")
+    setBasketNumbers(basketNumbers + 1);
   }
 
 
@@ -40,6 +40,7 @@
         <h3>$35.00 </h3>
         <a onClick={addToBasket} className="addToCart cart4" href="#">Add to Cart</a>
       </div>
+      <h1>Current Number in Cart {basketNumbers}</h1>
     </div>
   );
 };
