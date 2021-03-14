@@ -6,14 +6,7 @@
 
  
  const Home = () => {
-
-  // const [basketNumbers, setBasketNumbers] = useState(0);
-
-  // const addToBasket = () => {
-  //   setBasketNumbers(basketNumbers + 1);
-  // }
-
-
+ 
   return(
     <div className="container">
       <div className="image">
