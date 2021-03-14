@@ -16,8 +16,8 @@
       </div>
       <div className="image">
         <img src={giantsJacket} alt="NY Giants Shorts" /> 
-        <h3>NY Giants Shorts</h3>
-        <h3>$40.00 </h3>
+        <h3>NY Giants Jacket</h3>
+        <h3>$90.00 </h3>
         <a className="addToCart cart2" href="#">Add to Cart</a>
       </div>
       <div className="image">
