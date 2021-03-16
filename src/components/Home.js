@@ -1,8 +1,10 @@
  import React, { useState } from 'react'; 
- import giantsHat from '../images/giantshat.jpeg'
- import giantsJacket from '../images/giantsjacket.jpg'
- import metsJersey from '../images/metsjersey.jpeg'
- import bullsHat from '../images/bullshat.jpeg'
+import giantsHat from '../images/giantshat.jpeg';
+import giantsJacket from '../images/giantsjacket.jpg';
+import metsJersey from '../images/metsjersey.jpeg';
+import bullsHat from '../images/bullshat.jpeg';
+import { connect } from 'react-redux';
+import { addBasket } from '../actions/addAction';
 
  
  const Home = () => {
