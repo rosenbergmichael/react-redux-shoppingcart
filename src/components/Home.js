@@ -39,4 +39,4 @@ import { addBasket } from '../actions/addAction';
   );
 };
 
-export default Home;
+export default connect(null, { addBasket })(Home);
