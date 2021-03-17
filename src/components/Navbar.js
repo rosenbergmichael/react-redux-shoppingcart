@@ -1,5 +1,6 @@
 import React from 'react';
 import  { connect } from 'react-redux';
+import { getNumbers } from '../actions/getAction';
 
 
 function Navbar() {
@@ -24,4 +25,4 @@ const mapStateToProps = state => ({
   basketProps: state.basketState
 })
 
-export default connect(mapStateToProps , { addBasket })(Navbar);
+export default connect(mapStateToProps , { getNumbers })(Navbar);
