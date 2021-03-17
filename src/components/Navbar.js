@@ -20,4 +20,8 @@ function Navbar() {
   );
 }
 
-export default connect(null, { addBasket })(Navbar);
+const mapStateToProps = state => ({
+  basketProps: state.basketState
+})
+
+export default connect(mapStateToProps , { addBasket })(Navbar);
