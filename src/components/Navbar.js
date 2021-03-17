@@ -1,4 +1,6 @@
 import React from 'react';
+import  { connect } from 'react-redux';
+
 
 function Navbar() {
   return ( 
@@ -18,4 +20,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default connect(null, { addBasket })(Navbar);
