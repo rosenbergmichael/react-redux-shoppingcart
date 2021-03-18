@@ -4,7 +4,7 @@ import Home from './components/Home';
 import './App.css';
 import { Provider } from 'react-redux';
 import store from './store.js';
-
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {
   return (
