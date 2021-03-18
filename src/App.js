@@ -10,8 +10,10 @@ function App() {
   return (
     <Provider store={store}>
       <div className="App">
-        <Navbar />
-        <Home /> 
+        <Router>
+          <Navbar />
+          <Home /> 
+        </Router>
       </div>
     </Provider>
   );
