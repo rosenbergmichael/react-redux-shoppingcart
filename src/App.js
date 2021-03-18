@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
+import Cart from './components/Cart';
 import './App.css';
 import { Provider } from 'react-redux';
 import store from './store.js';
@@ -12,7 +13,8 @@ function App() {
       <div className="App">
         <Router>
           <Navbar />
-          <Home /> 
+          <Route path="/" component={Home} />
+          <Route path="/cart" component={Cart} />  
         </Router>
       </div>
     </Provider>
