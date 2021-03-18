@@ -13,8 +13,10 @@ function App() {
       <div className="App">
         <Router>
           <Navbar />
-          <Route path="/" component={Home} />
-          <Route path="/cart" component={Cart} />  
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/cart" component={Cart} />  
+          </Switch>
         </Router>
       </div>
     </Provider>
