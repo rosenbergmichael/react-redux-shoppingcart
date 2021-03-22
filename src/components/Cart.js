@@ -31,9 +31,9 @@ function Cart({basketProps}) {
         </div>
         <div className="price sm-hide">${product.price}.00</div>
         <div className="quantity">
-          <ion-icon className="decrease" name="arrow-back-circle-outline"></ion-icon>
+          <ion-icon className="decrease" name="remove-outline"></ion-icon>
             <span>{product.numbers}</span>
-          <ion-icon className="increase" name="arrow-forward-circle-outline"></ion-icon>  
+          <ion-icon className="increase" name="add-outline"></ion-icon> 
         </div>
         <div className="total">${product.numbers * product.price}.00</div>
       </Fragment>
