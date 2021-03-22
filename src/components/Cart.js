@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import { connect } from 'react-redux';
 
 function Cart({basketProps}) {
@@ -14,6 +14,14 @@ function Cart({basketProps}) {
     }
     console.log(productsInCart);
   })
+
+  productsInCart = productsInCart.map( (product, index) => {
+    return (
+      <Fragment>
+        
+      </Fragment>
+    )
+  });
 
   return (
     <div>
