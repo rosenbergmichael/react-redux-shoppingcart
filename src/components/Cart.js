@@ -22,6 +22,8 @@ function Cart({basketProps}) {
   const productImages = [giantsHat, giantsJacket, metsJersey, bullsHat]
 
   productsInCart = productsInCart.map( (product, index) => {
+    console.log("my product is");
+    console.log(product); 
     return (
       <Fragment>
         <div className="product"><ion-icon name="close-circle"></ion-icon><img src={productImages[index]} />
@@ -39,8 +41,13 @@ function Cart({basketProps}) {
   });
 
   return (
-    <div>
-      <h1>This is the Cart</h1>
+    <div className="container-products">
+      <div className="product-header">
+        <h5 className="product-title">PRODUCT</h5>
+        <h5 className="price sm-hide">PRICE</h5>
+        <h5 className="quantity">QUANTITY</h5>
+        <h5 className="total">TOTAL</h5>
+      </div>
     </div>
   )
 }
