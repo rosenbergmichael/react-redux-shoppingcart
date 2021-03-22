@@ -6,24 +6,28 @@ const initialState = {
   products: {
     giantsHat: {
       name: 'NY Giants Hat',
+      tagName: 'giantsHat',
       price: 15.00,
       numbers: 0,
       inCart: false
     },
     giantsJacket: {
       name: 'NY Giants Jacket',
+      tagName: 'giantsJacket',
       price: 90.00,
       numbers: 0,
       inCart: false
     },
     metsJersey: {
       name: 'NY Mets Jersey',
+      tagName: 'metsJersey',
       price: 70.00,
       numbers: 0,
       inCart: false
     },
     bullsHat: {
       name: 'Chicago Bulls Hat',
+      tagName: 'bullsHat',
       price: 35.00,
       numbers: 0,
       inCart: false

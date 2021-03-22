@@ -19,14 +19,24 @@ function Cart({basketProps}) {
     console.log(productsInCart);
   })
 
-  const productImages = [giantsHat, giantsJacket, metsJersey, bullsHat]
+  const productImages = (product) => {
+    if(product.tagName === 'giantsHat') {
+      return giantsHat;
+    } else if(product.tagName === 'giantsJacket') {
+      return giantsJacket;
+    } else if(product.tagName === 'metsJersey') {
+      return metsJersey;
+    } else if(product.tagName === 'bullsHat') {
+      return bullsHat;
+    }
+  }
 
-  productsInCart = productsInCart.map( (product, index) => {
+  productsInCart = productsInCart.map( (product) => {
     console.log("my product is");
     console.log(product); 
     return (
       <Fragment>
-        <div className="product"><ion-icon name="close-circle"></ion-icon><img src={productImages[index]} />
+        <div className="product"><ion-icon name="close-circle"></ion-icon><img src={productImages(product)} />
           <span className="sm-hide">{product.name}</span>
         </div>
         <div className="price sm-hide">${product.price}.00</div>
