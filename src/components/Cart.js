@@ -19,6 +19,8 @@ function Cart({basketProps}) {
     console.log(productsInCart);
   })
 
+  const productImages = [giantsHat, giantsJacket, metsJersey, bullsHat]
+
   productsInCart = productsInCart.map( (product, index) => {
     return (
       <Fragment>
