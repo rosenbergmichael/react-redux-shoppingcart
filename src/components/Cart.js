@@ -6,18 +6,12 @@ import metsJersey from '../images/metsjersey.jpeg';
 import bullsHat from '../images/bullshat.jpeg';
 
 function Cart({basketProps}) {
-  console.log(basketProps);
-
   let productsInCart = [];
-
   Object.keys(basketProps.products).forEach( function(item) {
-    console.log(item);
-    console.log(basketProps.products[item].inCart);
     if(basketProps.products[item].inCart) {
       productsInCart.push(basketProps.products[item])
     }
-    console.log(productsInCart);
-  })
+  });
 
   const productImages = (product) => {
     if(product.tagName === 'giantsHat') {
@@ -29,11 +23,9 @@ function Cart({basketProps}) {
     } else if(product.tagName === 'bullsHat') {
       return bullsHat;
     }
-  }
+  };
 
   productsInCart = productsInCart.map( (product) => {
-    console.log("my product is");
-    console.log(product); 
     return (
       <Fragment>
         <div className="product"><ion-icon name="close-circle"></ion-icon><img src={productImages(product)} />
