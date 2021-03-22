@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { connect } from 'react-redux';
 
 function Cart() {
   return (
@@ -8,4 +9,8 @@ function Cart() {
   )
 }
 
-export default Cart
+const mapStateToProps = state => ({
+  basketProps = state.basketState 
+});
+
+export default connect(mapStateToProps)(Cart);
