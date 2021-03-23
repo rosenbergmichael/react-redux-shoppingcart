@@ -34,9 +34,9 @@ function Cart({basketProps, productQuantity}) {
         </div>
         <div className="price sm-hide">${product.price}.00</div>
         <div className="quantity">
-          <ion-icon onClick= {() => productQuantity('decrease')} className="decrease" name="remove-outline"></ion-icon>
+          <ion-icon onClick= {() => productQuantity('decrease', product.tagName)} className="decrease" name="remove-outline"></ion-icon>
             <span>{product.numbers}</span>
-          <ion-icon onClick= {() => productQuantity('increase')} className="increase" name="add-outline"></ion-icon> 
+          <ion-icon onClick= {() => productQuantity('increase', product.tagName)} className="increase" name="add-outline"></ion-icon> 
         </div>
         <div className="total">${product.numbers * product.price}.00</div>
       </Fragment>
