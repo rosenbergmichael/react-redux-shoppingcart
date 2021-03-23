@@ -36,9 +36,10 @@ const initialState = {
 }
 
 export default(state = initialState, action) => {
+  let productSelected = "";
    switch(action.type) {
      case ADD_PRODUCT_BASKET: 
-        let productSelected = {...state.products[action.payload]}
+        productSelected = {...state.products[action.payload]}
 
         productSelected.numbers += 1;
         productSelected.inCart = true;
@@ -58,13 +59,27 @@ export default(state = initialState, action) => {
           ...state
         }
       case INCREASE_QUANTITY:
+        productSelected = {...state.products[action.payload]}
+        productSelected.numbers += 1;
         return {
-          ...state
+          ...state,
+          cartCost: state.cartCost + state.products[action.payload].price,
+          products: {
+            ...state.products,
+            [action.payload]: productSelected
+          }
         }
-      case DECREASE_QUANTITY:
-        return {
-          ...state
-        }
+        case DECREASE_QUANTITY:
+          productSelected = {...state.products[action.payload]}
+          productSelected.numbers -= 1;
+          return {
+            ...state,
+            cartCost: state.cartCost - state.products[action.payload].price,
+            products: {
+              ...state.products,
+              [action.payload]: productSelected
+            }
+          }
       default: 
         return state; 
    }
