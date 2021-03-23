@@ -26,9 +26,9 @@ function Cart({basketProps, productQuantity}) {
     }
   };
 
-  productsInCart = productsInCart.map( (product) => {
+  productsInCart = productsInCart.map( (product, index) => {
     return (
-      <Fragment>
+      <Fragment key={index}>
         <div className="product"><ion-icon name="close-circle"></ion-icon><img src={productImages(product)} />
           <span className="sm-hide">{product.name}</span>
         </div>
