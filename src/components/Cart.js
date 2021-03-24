@@ -29,7 +29,7 @@ function Cart({basketProps, productQuantity}) {
   productsInCart = productsInCart.map( (product, index) => {
     return (
       <Fragment key={index}>
-        <div className="product"><ion-icon name="close-circle"></ion-icon><img src={productImages(product)} />
+        <div className="product"><ion-icon onClick= {() => clearProducts(product.tagName)} name="close-circle"></ion-icon><img src={productImages(product)} />
           <span className="sm-hide">{product.name}</span>
         </div>
         <div className="price sm-hide">${product.price}.00</div>
