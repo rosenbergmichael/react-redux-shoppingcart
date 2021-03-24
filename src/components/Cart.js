@@ -4,9 +4,9 @@ import giantsHat from '../images/giantshat.jpeg';
 import giantsJacket from '../images/giantsjacket.jpg';
 import metsJersey from '../images/metsjersey.jpeg';
 import bullsHat from '../images/bullshat.jpeg';
-import { productQuantity } from '../actions/productQuantity';
+import { productQuantity, clearProduct } from '../actions/productQuantity';
 
-function Cart({basketProps, productQuantity}) {
+function Cart({basketProps, productQuantity, clearProduct}) {
   let productsInCart = [];
   Object.keys(basketProps.products).forEach( function(item) {
     if(basketProps.products[item].inCart) {
@@ -29,7 +29,7 @@ function Cart({basketProps, productQuantity}) {
   productsInCart = productsInCart.map( (product, index) => {
     return (
       <Fragment key={index}>
-        <div className="product"><ion-icon onClick= {() => clearProducts(product.tagName)} name="close-circle"></ion-icon><img src={productImages(product)} />
+        <div className="product"><ion-icon onClick= {() => clearProduct(product.tagName)} name="close-circle"></ion-icon><img src={productImages(product)} />
           <span className="sm-hide">{product.name}</span>
         </div>
         <div className="price sm-hide">${product.price}.00</div>
@@ -66,4 +66,4 @@ const mapStateToProps = state => ({
   basketProps: state.basketState 
 });
 
-export default connect(mapStateToProps, { productQuantity })(Cart);
+export default connect(mapStateToProps, { productQuantity, clearProduct })(Cart);
