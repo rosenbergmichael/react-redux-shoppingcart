@@ -1,9 +1,9 @@
-import React, {useEffect } from 'react';
+import React, {useEffect} from 'react';
 import  { connect } from 'react-redux';
 import { getNumbers } from '../actions/getAction';
 import { Link } from 'react-router-dom';
 
-function Navbar(props ) {
+function Navbar(props) {
 
   useEffect(() => {
     getNumbers();
