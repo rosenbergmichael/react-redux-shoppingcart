@@ -13,7 +13,7 @@ function Navbar(props ) {
     <header>
         <div className="overlay"></div>
         <nav>
-          <h2>Shop</h2>
+          <h2>ShopVint</h2>
           <ul>
             <li><Link to="/">Home</Link></li>
             <li><Link to="/about">About</Link></li>

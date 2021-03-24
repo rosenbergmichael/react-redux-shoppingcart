@@ -8,7 +8,6 @@ import { addBasket } from '../actions/addAction';
 
  
  const Home = (props) => {
-  console.log(props);
   return(
     <div className="container">
       <div className="image">
