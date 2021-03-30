@@ -1,6 +1,6 @@
 # ShopVint
 
-A simple e-commerce shopping cart type app. Apologies in advance, but the products seen here are not actually for sale, I just built this app for fun!
+A simple e-commerce shopping cart app. Apologies in advance, but the products seen here are not actually for sale, I just built this app for fun!
 
 Built using React and Redux, styled using CSS
 
