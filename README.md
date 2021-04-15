@@ -6,6 +6,8 @@ Built using React and Redux, styled using CSS
 
 Live Link: https://shopvint.netlify.app/
 
+![picture](public/ShopVintScreenshot.png)
+
 ## Install Instructions
 
 To use this app:
