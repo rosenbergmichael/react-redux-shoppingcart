@@ -4,6 +4,7 @@ A simple e-commerce shopping cart app. Apologies in advance, but the products se
 
 Built using React and Redux, styled using CSS
 
+Live Link: https://shopvint.netlify.app/
 
 ## Install Instructions
 
